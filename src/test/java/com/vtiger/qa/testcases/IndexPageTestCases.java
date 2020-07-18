@@ -1,5 +1,9 @@
 package com.vtiger.qa.testcases;
 
-public class IndexPageTestCases {
+import org.testng.annotations.Test;
+
+import com.vtiger.qa.base.TestBase;
+
+public class IndexPageTestCases extends TestBase{
 
 }
