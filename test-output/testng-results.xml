@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52" started-at="2020-07-18T13:48:05Z" finished-at="2020-07-18T13:48:05Z">
+  <suite name="Default suite" duration-ms="32718" started-at="2020-07-18T18:37:10Z" finished-at="2020-07-18T18:37:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52" started-at="2020-07-18T13:48:05Z" finished-at="2020-07-18T13:48:05Z">
+    <test name="Default test" duration-ms="32718" started-at="2020-07-18T18:37:10Z" finished-at="2020-07-18T18:37:43Z">
       <class name="com.vtiger.qa.testcases.IndexPageTestCases">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1efef64]" name="setupSuite" is-config="true" duration-ms="52" started-at="2020-07-18T13:48:05Z" finished-at="2020-07-18T13:48:05Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@11161c7]" name="setupSuite" is-config="true" duration-ms="175" started-at="2020-07-18T18:37:10Z" finished-at="2020-07-18T18:37:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="demo()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1efef64]" name="demo" duration-ms="8" started-at="2020-07-18T13:48:05Z" finished-at="2020-07-18T13:48:05Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@11161c7]" name="openBrowser" is-config="true" duration-ms="32516" started-at="2020-07-18T18:37:10Z" finished-at="2020-07-18T18:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo -->
-        <test-method status="PASS" signature="demo1()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1efef64]" name="demo1" duration-ms="2" started-at="2020-07-18T13:48:05Z" finished-at="2020-07-18T13:48:05Z">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@11161c7]" name="verifyTitle" duration-ms="87" started-at="2020-07-18T18:37:42Z" finished-at="2020-07-18T18:37:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo1 -->
+        </test-method> <!-- verifyTitle -->
       </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
