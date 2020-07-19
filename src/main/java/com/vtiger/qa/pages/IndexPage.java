@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import com.vtiger.qa.base.TestBase;
 
 public class IndexPage extends TestBase {
+	LoginPage loginpage;
 	@FindBy(xpath = "//a[contains(text(),'Login')]")
 	WebElement loginLink;
 	
@@ -24,9 +25,10 @@ public class IndexPage extends TestBase {
 	@FindBy(xpath="//img[@class='navbar-brand-img']")
 	WebElement vtigerLogo;
 	
-	public void clickLoginLink() {
+	public LoginPage clickLoginLink() {
 		loginLink.click();
 		System.out.println("click");
+		return new LoginPage();
 	}
 	
 	public void clickSignupLink() {
