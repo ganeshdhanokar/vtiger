@@ -10,8 +10,7 @@ public class SignUpPage extends TestBase{
 
 	@FindBy(xpath="//ul[@class='rd-navbar-nav']/li[1]/a")
 	WebElement clickSignUpLink;
-	
-	
+
 	public void clickSignUpLink()
 	{
 		clickSignUpLink.click();
