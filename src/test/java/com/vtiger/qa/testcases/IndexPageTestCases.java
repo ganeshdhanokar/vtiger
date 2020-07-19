@@ -30,7 +30,7 @@ public class IndexPageTestCases extends TestBase {
 	public void verifyLoginLink() {
 		indexpage.clickLoginLink();
 		//assertEquals(actual, expected);
-
+		//
 	}
 	
 	@AfterMethod
