@@ -23,6 +23,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	public static Properties property;
 	public static WebDriver driver;
+
 	
 	@BeforeSuite
 	public void setupSuite() {
@@ -69,9 +70,8 @@ public class TestBase {
 		
 		driver.get(property.getProperty("baseURL"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(property.getProperty("pageLoadTimeout")), TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Long.parseLong(property.getProperty("implicitTimeout")), TimeUnit.SECONDS);
 	}
 
 }
