@@ -25,7 +25,8 @@ public class IndexPage extends TestBase {
 	WebElement vtigerLogo;
 	
 	public void clickLoginLink() {
-		loginLink.click();	
+		loginLink.click();
+		System.out.println("click");
 	}
 	
 	public void clickSignupLink() {
