@@ -5,8 +5,12 @@
     <classes>
       <class name="com.vtiger.qa.testcases.IndexPageTestCases">
         <methods>
-          <include name="demo"/>
+          <include name="setup"/>
+          <include name="verifyLoginLink"/>
+          <include name="openBrowser"/>
+          <include name="verifyTitle"/>
           <include name="setupSuite"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
     </classes>

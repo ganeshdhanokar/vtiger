@@ -25,7 +25,10 @@ public class IndexPage extends TestBase {
 	@FindBy(xpath="//img[@class='navbar-brand-img']")
 	WebElement vtigerLogo;
 	
+
+
 	public LoginPage clickLoginLink() {
+
 		loginLink.click();
 		System.out.println("click");
 		return new LoginPage();
