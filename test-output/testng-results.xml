@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31204" started-at="2020-07-20T07:26:46Z" finished-at="2020-07-20T07:27:17Z">
+  <suite name="Default suite" duration-ms="61866" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:39:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31204" started-at="2020-07-20T07:26:46Z" finished-at="2020-07-20T07:27:17Z">
-      <class name="com.vtiger.qa.testcases.SignUpPageTestCase">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.SignUpPageTestCase@11161c7]" name="setupSuite" is-config="true" duration-ms="55" started-at="2020-07-20T07:26:46Z" finished-at="2020-07-20T07:26:46Z">
+    <test name="Default test" duration-ms="61866" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:39:05Z">
+      <class name="com.vtiger.qa.testcases.IndexPageTestCases">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="setupSuite" is-config="true" duration-ms="32" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.SignUpPageTestCase@11161c7]" name="openBrowser" is-config="true" duration-ms="29790" started-at="2020-07-20T07:26:46Z" finished-at="2020-07-20T07:27:16Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="openBrowser" is-config="true" duration-ms="57025" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:39:00Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="clickSignUpButton()[pri:0, instance:com.vtiger.qa.testcases.SignUpPageTestCase@11161c7]" name="clickSignUpButton" duration-ms="1278" started-at="2020-07-20T07:27:16Z" finished-at="2020-07-20T07:27:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="setup" is-config="true" duration-ms="69" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickSignUpButton -->
-      </class> <!-- com.vtiger.qa.testcases.SignUpPageTestCase -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="verifyTitle" duration-ms="45" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="setup" is-config="true" duration-ms="1" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginLink()[pri:1, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="verifyLoginLink" duration-ms="4637" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLink -->
+      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
