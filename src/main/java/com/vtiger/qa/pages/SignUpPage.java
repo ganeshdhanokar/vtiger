@@ -14,7 +14,6 @@ public class SignUpPage extends TestBase {
 	@CacheLookup
 	WebElement clickSignUpButton;
 
-
 	public void clickSignUpLink()
 	{
 		clickSignUpButton.click();

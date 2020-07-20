@@ -9,7 +9,6 @@ public class SignUpPageTestCase extends TestBase {
 
 	SignUpPage signuppage;
 
-	
 	@Test
 	public void clickSignUpButton() {
 		signuppage= new SignUpPage();
