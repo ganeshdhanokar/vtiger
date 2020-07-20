@@ -5,13 +5,9 @@
     <classes>
       <class name="com.vtiger.qa.testcases.SignUpPageTestCase">
         <methods>
-          <include name="setup"/>
-          <include name="verifyLoginLink"/>
           <include name="openBrowser"/>
           <include name="setupSuite"/>
           <include name="clickSignUpButton"/>
-
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.vtiger.qa.testcases.SignUpPageTestCase -->
     </classes>

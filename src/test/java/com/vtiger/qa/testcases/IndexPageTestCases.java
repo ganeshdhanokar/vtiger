@@ -26,14 +26,14 @@ public class IndexPageTestCases extends TestBase {
 		Assert.assertEquals(driver.getTitle(), "CRM Software | Customer Relationship Management System - Vtiger CRM");
 	}
 	
-	//@Test
+	@Test
 	public void verifyLoginLink() {
 		indexpage.clickLoginLink();
 		//assertEquals(actual, expected);
 		//
 	}
 	
-	@AfterMethod
+	//@AfterMethod
 	public void tearDown() {
 		driver.quit();
 
