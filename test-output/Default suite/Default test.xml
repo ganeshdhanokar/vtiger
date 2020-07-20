@@ -34,4 +34,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
     </failure>
   </testcase> <!-- clickSignUpButton -->
+=======
+<testsuite hostname="6VONETUM41T5TPY" ignored="0" name="Default test" tests="1" failures="0" timestamp="19 Jul 2020 13:12:33 GMT" time="64.058" errors="0">
+  <testcase name="verifyTitle" time="0.065" classname="com.vtiger.qa.testcases.IndexPageTestCases"/>
 </testsuite> <!-- Default test -->

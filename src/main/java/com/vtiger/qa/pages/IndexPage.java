@@ -26,7 +26,8 @@ public class IndexPage extends TestBase {
 	
 	
 	public void clickLoginLink() {
-		loginLink.click();	
+		loginLink.click();
+		System.out.println("click");
 	}
 	
 	public void clickSignupLink() {
