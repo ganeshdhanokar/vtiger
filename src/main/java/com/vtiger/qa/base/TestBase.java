@@ -22,8 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	public static Properties property;
-	public static WebDriver driver= null;
-===
+	public static WebDriver driver;
 	
 	@BeforeSuite
 	public void setupSuite() {
