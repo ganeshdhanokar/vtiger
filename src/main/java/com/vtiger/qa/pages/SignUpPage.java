@@ -4,14 +4,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
+import com.vtiger.qa.base.TestBase;
 
-public class SignUpPage {
+public class SignUpPage extends TestBase {
 	
-	@FindBy(xpath="//a[@class='navbar-btn btn btn-sm btn-primary ml-2']")
+	
+	
+	@FindBy(xpath="//div[@id=navbarCollapse']/a[2]")
 	@CacheLookup
 	WebElement clickSignUpButton;
 
-	public void clickSignUpButton()
+
+	public void clickSignUpLink()
 	{
 		clickSignUpButton.click();
 	}
