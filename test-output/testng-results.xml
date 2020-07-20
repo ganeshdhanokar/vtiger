@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+
   <suite name="Default suite" duration-ms="64058" started-at="2020-07-19T13:11:28Z" finished-at="2020-07-19T13:12:33Z">
     <groups>
     </groups>
@@ -22,6 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
+
         <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="setup" is-config="true" duration-ms="3" started-at="2020-07-19T13:12:30Z" finished-at="2020-07-19T13:12:30Z">
           <reporter-output>
           </reporter-output>

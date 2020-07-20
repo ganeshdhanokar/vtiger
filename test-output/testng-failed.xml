@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.qa.testcases.IndexPageTestCases">
+      <class name="com.vtiger.qa.testcases.SignUpPageTestCase">
         <methods>
           <include name="setup"/>
           <include name="verifyLoginLink"/>
           <include name="openBrowser"/>
-          <include name="verifyTitle"/>
           <include name="setupSuite"/>
+
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
+      </class> <!-- com.vtiger.qa.testcases.SignUpPageTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
