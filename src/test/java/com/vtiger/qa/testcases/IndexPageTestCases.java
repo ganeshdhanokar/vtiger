@@ -20,13 +20,13 @@ public class IndexPageTestCases extends TestBase {
 	}
 	
 	
-	@Test
+	@Test(priority=0)
 	public void verifyTitle() {
 
 		Assert.assertEquals(driver.getTitle(), "CRM Software | Customer Relationship Management System - Vtiger CRM");
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void verifyLoginLink() {
 		indexpage.clickLoginLink();
 		//assertEquals(actual, expected);
