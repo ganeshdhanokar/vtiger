@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.vtiger.qa.base.TestBase;
 
 public class LoginPage extends TestBase{
-	HomePage homepage = new HomePage();
+	
 	
 	@FindBy(xpath="//input[@name='username']")
 	WebElement username;
@@ -44,5 +44,6 @@ public class LoginPage extends TestBase{
 		return new HomePage();
 		
 	}
+
 
 }

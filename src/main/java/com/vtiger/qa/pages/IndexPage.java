@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.vtiger.qa.base.TestBase;
 
 public class IndexPage extends TestBase {
+	
 	@FindBy(xpath = "//a[contains(text(),'Login')]")
 	WebElement loginLink;
 	
@@ -30,13 +31,15 @@ public class IndexPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickLoginLink() {
+	public LoginPage clickLoginLink() {
 		loginLink.click();
-		System.out.println("click");
+		return new LoginPage();
+
 	}
 	
-	public void clickSignupLink() {
+	public SignUpPage clickSignupLink() {
 		signUpLink.click();
+		return new SignUpPage();
 	}
 	
 	public void clickProductsDropdown() {
@@ -51,9 +54,11 @@ public class IndexPage extends TestBase {
 		covidDiscountLink.click();
 	}
 	
-	public void verifyVtigerLogo() {
-		vtigerLogo.isDisplayed();
+	public boolean verifyVtigerLogo() {
+		return vtigerLogo.isDisplayed();
 		
 	}
+	
+	
 
 }
