@@ -7,6 +7,7 @@ import com.vtiger.qa.base.TestBase;
 
 public class IndexPage extends TestBase {
 	LoginPage loginpage;
+	
 	@FindBy(xpath = "//a[contains(text(),'Login')]")
 	WebElement loginLink;
 	
@@ -28,9 +29,8 @@ public class IndexPage extends TestBase {
 
 
 	public LoginPage clickLoginLink() {
-
 		loginLink.click();
-		System.out.println("click");
+		
 		return new LoginPage();
 	}
 	

@@ -1,6 +1,5 @@
 package com.vtiger.qa.base;
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -21,10 +20,10 @@ import org.testng.annotations.Parameters;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
+	
 	public static Properties property;
 	public static WebDriver driver;
 
-	
 	@BeforeSuite
 	public void setupSuite() {
 		 
@@ -39,7 +38,6 @@ public class TestBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 	@BeforeTest
 	@Parameters("browser")
@@ -65,11 +63,10 @@ public class TestBase {
 					.println("Invalid Browser name " + browserName + ". Expected Expected CHROME, IE, FIREFOX, OPERA");
 			break;
 		}
-		
-		driver.get(property.getProperty("baseURL"));
+		driver.get(property.getProperty("loginPageURL"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(property.getProperty("pageLoadTimeout")), TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Long.parseLong(property.getProperty("implicitTimeout")), TimeUnit.SECONDS);
+		
 	}
-
 }
