@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 import com.vtiger.qa.base.TestBase;
 import com.vtiger.qa.pages.SignUpPage;
 
-public class SignUpPageTestCase extends TestBase {
-
+public class SignUpPageTestCase extends TestBase 
+{
 	SignUpPage signuppage;
 	
-	
 	@Test(priority = 0)
-	public void clickSignUpButton() {
+	public void clickSignUpButton() 
+	{
 		signuppage= new SignUpPage();
 		signuppage.clickSignUpLink();
 		logger.info("Click on Sign Up Button");
@@ -55,13 +55,15 @@ public class SignUpPageTestCase extends TestBase {
 	}
 	
 	@Test(priority = 5)
-	public void getNewTabPrivacyPolicy() {
+	public void getNewTabPrivacyPolicy() 
+	{
 		signuppage.getNewTabPrivacyPolicy();
 		logger.info("Switch to Privacy Policy Tab");
 	}
 	
 	@Test(priority = 6)
-	public void getNewTabTermsCondition() {
+	public void getNewTabTermsCondition() 
+	{
 		signuppage.getNewTabTermsCondition();
 		logger.info("Switch to New Tab");
 	}

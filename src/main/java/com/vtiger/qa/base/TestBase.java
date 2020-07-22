@@ -33,7 +33,6 @@ public class TestBase {
 		logger= Logger.getLogger("vtiger");
 		PropertyConfigurator.configure("log4j.properties");
 		
-		
 		try {
 			property = new Properties();
 			FileInputStream file = new FileInputStream(".\\src\\main\\java\\com\\vtiger\\qa\\config\\config.properties");

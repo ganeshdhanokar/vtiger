@@ -39,20 +39,24 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//a[contains(text(),'Pricing')]")
 	WebElement getTermsConditionTab;
 
-	public SignUpPage() {
+	public SignUpPage() 
+	{
 		PageFactory.initElements(driver, this);
 	}
 
-	public void clickSignUpLink() {
+	public void clickSignUpLink() 
+	{
 		clickSignUpButton.click();
 	}
 
-	public void enterMail() {
+	public void enterMail() 
+	{
 		// textEnterEmail.click();
 		textEnterEmail.sendKeys("suresh@getnada.com");
 	}
 
-	public void clickNextButton() {
+	public void clickNextButton() 
+	{
 		clickNextButton.click();
 
 	}
@@ -64,18 +68,21 @@ public class SignUpPage extends TestBase {
 	 * contains("You have reached the limit on signup attempts, please contact"); }
 	 */
 
-	public void sendVerificationMail() {
+	public void sendVerificationMail() 
+	{
 		String ActualTitle = heading.getText();
 		String ExpectedTitle = "You have reached the limit on signup attempts, please contact support@vtiger.com for further assistance.";
 		Assert.assertEquals(ExpectedTitle, ActualTitle);
 
 	}
 
-	public void clickPrivacyPolicy() {
+	public void clickPrivacyPolicy() 
+	{
 		clickPrivacyPolicy.click();
 	}
 
-	public void getNewTabPrivacyPolicy() {
+	public void getNewTabPrivacyPolicy() 
+	{
 
 		String originalWindow = driver.getWindowHandle();
 		String newWindow;
@@ -89,7 +96,6 @@ public class SignUpPage extends TestBase {
 				System.out.println("Privacy Policy | Vtiger CRM " + getPrivacyPolictTab.getText());
 				WebDriverWait wait = new WebDriverWait(driver,100);
 			}
-
 		}
 		//driver.close(); /// In here I should close the new window
 
@@ -97,14 +103,15 @@ public class SignUpPage extends TestBase {
 		WebDriverWait wait = new WebDriverWait(driver,10000);
 	}
 
-	
-	public void getNewTabTermsCondition() {
+	public void getNewTabTermsCondition() 
+	{
 		String originalWindow = driver.getWindowHandle();
 		String newWindow;
 		Set<String> windowHandles = driver.getWindowHandles();
 		Iterator<String> stringIterator = windowHandles.iterator();
 
-		while (stringIterator.hasNext()) {
+		while (stringIterator.hasNext()) 
+		{
 			newWindow = stringIterator.next();
 			if (!originalWindow.equalsIgnoreCase(newWindow)) {
 				driver.switchTo().window(newWindow);
@@ -112,7 +119,7 @@ public class SignUpPage extends TestBase {
 				WebDriverWait wait = new WebDriverWait(driver,500);
 			}
 		}
-		driver.close(); /// In here I should close the new window
+		//driver.close(); /// In here I should close the new window
 
 		driver.switchTo().window(originalWindow);
 	} 
