@@ -3,15 +3,24 @@ package com.vtiger.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+import com.vtiger.qa.base.TestBase;
 
-public class SignUpPage {
+public class SignUpPage extends TestBase {
 	
-	@FindBy(xpath="//a[@class='navbar-btn btn btn-sm btn-primary ml-2']")
+	
+	
+	@FindBy(xpath="//a[contains(text(),'Sign up')]")
 	@CacheLookup
 	WebElement clickSignUpButton;
+	
+	
+	public SignUpPage() {
+		PageFactory.initElements(driver, this);
+	}
 
-	public void clickSignUpButton()
+	public void clickSignUpLink()
 	{
 		clickSignUpButton.click();
 	}

@@ -5,10 +5,11 @@
     <classes>
       <class name="com.vtiger.qa.testcases.LoginPageTest">
         <methods>
-          <include name="logoTest"/>
-          <include name="microsoftLinkTest"/>
+
+          <include name="setup"/>
           <include name="openBrowser"/>
-          <include name="loginPageTitleTest"/>
+          <include name="verifyCovidLink"/>
+
           <include name="setupSuite"/>
           <include name="linkedInLinkTest"/>
           <include name="loginTest"/>
