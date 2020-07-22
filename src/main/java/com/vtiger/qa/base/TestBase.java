@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -23,10 +25,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	public static Properties property;
 	public static WebDriver driver;
+	public static Logger logger;
 	
 	@BeforeSuite
 	public void setupSuite() {
 		 
+		logger= Logger.getLogger("vtiger");
+		PropertyConfigurator.configure("log4j.properties");
+		
+		
 		try {
 			property = new Properties();
 			FileInputStream file = new FileInputStream(".\\src\\main\\java\\com\\vtiger\\qa\\config\\config.properties");
