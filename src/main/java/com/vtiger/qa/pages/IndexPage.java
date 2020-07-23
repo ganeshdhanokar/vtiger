@@ -36,9 +36,7 @@ public class IndexPage extends TestBase {
 	WebElement vtigerLogo;
 	
 
-	public LoginPage clickLoginLink() {
-		loginLink.click();
-		
+	
 	public IndexPage() {
 		PageFactory.initElements(driver, this);
 	}
