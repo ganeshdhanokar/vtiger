@@ -3,13 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.qa.testcases.SignUpPageTestCase">
+      <class name="com.vtiger.qa.testcases.IndexPageTestCases">
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="setup"/>
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
           <include name="openBrowser"/>
+          <include name="verifyTitle"/>
           <include name="setupSuite"/>
+<<<<<<< HEAD
           <include name="clickSignUpButton"/>
+=======
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
         </methods>
-      </class> <!-- com.vtiger.qa.testcases.SignUpPageTestCase -->
+      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="16879" started-at="2020-07-20T08:58:58Z" finished-at="2020-07-20T08:59:15Z">
+=======
+  <suite name="Default suite" duration-ms="61866" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:39:05Z">
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="16879" started-at="2020-07-20T08:58:58Z" finished-at="2020-07-20T08:59:15Z">
       <class name="com.vtiger.qa.testcases.SignUpPageTestCase">
         <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.SignUpPageTestCase@548a102f]" name="setupSuite" is-config="true" duration-ms="49" started-at="2020-07-20T08:58:58Z" finished-at="2020-07-20T08:58:58Z">
+=======
+    <test name="Default test" duration-ms="61866" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:39:05Z">
+      <class name="com.vtiger.qa.testcases.IndexPageTestCases">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="setupSuite" is-config="true" duration-ms="32" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:38:03Z">
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.SignUpPageTestCase@548a102f]" name="openBrowser" is-config="true" duration-ms="16721" started-at="2020-07-20T08:58:58Z" finished-at="2020-07-20T08:59:15Z">
+=======
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="openBrowser" is-config="true" duration-ms="57025" started-at="2020-07-20T07:38:03Z" finished-at="2020-07-20T07:39:00Z">
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
           <params>
             <param index="0">
               <value>
@@ -22,6 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="clickSignUpButton()[pri:0, instance:com.vtiger.qa.testcases.SignUpPageTestCase@548a102f]" name="clickSignUpButton" duration-ms="78" started-at="2020-07-20T08:59:15Z" finished-at="2020-07-20T08:59:15Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
@@ -56,10 +71,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="setup" is-config="true" duration-ms="69" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:00Z">
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- clickSignUpButton -->
       </class> <!-- com.vtiger.qa.testcases.SignUpPageTestCase -->
+=======
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="verifyTitle" duration-ms="45" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="setup" is-config="true" duration-ms="1" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginLink()[pri:1, instance:com.vtiger.qa.testcases.IndexPageTestCases@4ed9f0]" name="verifyLoginLink" duration-ms="4637" started-at="2020-07-20T07:39:00Z" finished-at="2020-07-20T07:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLink -->
+      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
+>>>>>>> branch 'surendra' of https://github.com/ganeshdhanokar/vtiger.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
