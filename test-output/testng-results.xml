@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
@@ -12,6 +13,7 @@
           </reporter-output>
         </test-method> <!-- setupSuite -->
         <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="openBrowser" is-config="true" duration-ms="93805" started-at="2020-07-21T07:35:13Z" finished-at="2020-07-21T07:36:47Z">
+
           <params>
             <param index="0">
               <value>
@@ -22,6 +24,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
+
         <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="setup" is-config="true" duration-ms="1951" started-at="2020-07-21T07:36:47Z" finished-at="2020-07-21T07:36:49Z">
           <reporter-output>
           </reporter-output>
@@ -100,10 +103,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- verifySignUpLink -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="tearDown" is-config="true" duration-ms="3787" started-at="2020-07-21T07:37:21Z" finished-at="2020-07-21T07:37:25Z">
+
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
+        </test-method> <!-- logoTest -->
+        <test-method status="PASS" signature="googleLinkTest()[pri:3, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="googleLinkTest" duration-ms="34" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleLinkTest -->
+        <test-method status="PASS" signature="microsoftLinkTest()[pri:4, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="microsoftLinkTest" duration-ms="75" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- microsoftLinkTest -->
+        <test-method status="PASS" signature="linkedInLinkTest()[pri:5, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="linkedInLinkTest" duration-ms="27" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkedInLinkTest -->
+        <test-method status="PASS" signature="loginTest()[pri:6, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="loginTest" duration-ms="183" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.vtiger.qa.testcases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

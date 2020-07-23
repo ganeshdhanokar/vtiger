@@ -12,6 +12,10 @@ import com.vtiger.qa.utility.MouseActions;
 
 public class IndexPage extends TestBase {
 
+
+	LoginPage loginpage;
+	
+
 	@FindBy(xpath = "//a[contains(text(),'Login')]")
 	WebElement loginLink;
 
@@ -33,8 +37,10 @@ public class IndexPage extends TestBase {
 	@FindBy(xpath = "//img[@class='navbar-brand-img']")
 	WebElement vtigerLogo;
 
+
 	@FindBy(xpath = "(//label[@class='custom-control-label'])[1]")
 	WebElement toggleBtn;
+
 
 	public IndexPage() {
 		PageFactory.initElements(driver, this);
@@ -84,8 +90,10 @@ public class IndexPage extends TestBase {
 		return new CovidPage();
 	}
 
+
 	public void clickOnToggleButton() {
 		toggleBtn.click();
 	}
+
 
 }
