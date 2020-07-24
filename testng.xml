@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Vtiger">
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value="CHROME"></parameter>
+<suite name="Vtiger" verbose="10">
+  <test name="Test">
+  
   <classes>
-  <class name="com.vtiger.qa.testcases.IndexPageTestCases"/>
+ <class name="com.vtiger.qa.testcases.IndexPageTestCases"/> 
+  <class name="com.vtiger.qa.testcases.LoginPageTest"/> 
+<!--  <class name="com.vtiger.qa.testcases.SignUpPageTestCase"/> -->
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

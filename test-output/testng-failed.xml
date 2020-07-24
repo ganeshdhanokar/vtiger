@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Vtiger]">
+  <test thread-count="5" verbose="10" name="Test(failed)">
     <classes>
-      <class name="com.vtiger.qa.testcases.LoginPageTest">
+      <class name="com.vtiger.qa.testcases.IndexPageTestCases">
         <methods>
-
           <include name="setup"/>
           <include name="openBrowser"/>
-          <include name="verifyCovidLink"/>
-
+          <include name="tearDown"/>
           <include name="setupSuite"/>
-          <include name="linkedInLinkTest"/>
-          <include name="loginTest"/>
-          <include name="googleLinkTest"/>
-          <include name="setUp"/>
+          <include name="verifyPricingLink"/>
         </methods>
-      </class> <!-- com.vtiger.qa.testcases.LoginPageTest -->
+      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Vtiger] -->
