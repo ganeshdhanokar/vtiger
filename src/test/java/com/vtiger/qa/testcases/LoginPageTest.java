@@ -41,7 +41,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertTrue(res);
 	}
 	
-	@Test(priority=10)
+	@Test(priority=10, description="Google Link Test at LoginPage")
 	public void googleLinkTest() {
 		boolean res1 = loginPage.validateGoogleLink();
 		System.out.println("Link Displayed:"+res1);
