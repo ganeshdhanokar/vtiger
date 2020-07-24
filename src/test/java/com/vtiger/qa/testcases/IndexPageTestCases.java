@@ -17,6 +17,7 @@ public class IndexPageTestCases extends TestBase {
 	
 	@BeforeClass
 	public void setup() {
+		initialization(property.getProperty("browser"));
 		indexPage = new IndexPage();
 	}
 	

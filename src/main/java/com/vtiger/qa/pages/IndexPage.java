@@ -68,7 +68,6 @@ public class IndexPage extends TestBase {
 	public  PricingPage clickOnPricingLink() {
 		pricingLink.click();
 		return new PricingPage();
-	
 	}
 	
 	public void hoverOnResourcesDropdown() {
