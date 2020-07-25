@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="131827" started-at="2020-07-21T07:35:13Z" finished-at="2020-07-21T07:37:25Z">
+  <suite name="Failed suite [Vtiger]" duration-ms="42635" started-at="2020-07-24T15:15:44 IST" finished-at="2020-07-24T15:16:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="131827" started-at="2020-07-21T07:35:13Z" finished-at="2020-07-21T07:37:25Z">
+    <test name="Test(failed)" duration-ms="42635" started-at="2020-07-24T15:15:44 IST" finished-at="2020-07-24T15:16:27 IST">
       <class name="com.vtiger.qa.testcases.IndexPageTestCases">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="setupSuite" is-config="true" duration-ms="32" started-at="2020-07-21T07:35:13Z" finished-at="2020-07-21T07:35:13Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1f13d6e]" name="setupSuite" is-config="true" duration-ms="168" started-at="2020-07-24T15:15:44 IST" finished-at="2020-07-24T15:15:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="openBrowser" is-config="true" duration-ms="93805" started-at="2020-07-21T07:35:13Z" finished-at="2020-07-21T07:36:47Z">
-
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1f13d6e]" name="openBrowser" is-config="true" duration-ms="33092" started-at="2020-07-24T15:15:44 IST" finished-at="2020-07-24T15:16:17 IST">
           <params>
             <param index="0">
               <value>
@@ -24,106 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="setup" is-config="true" duration-ms="1951" started-at="2020-07-21T07:36:47Z" finished-at="2020-07-21T07:36:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1f13d6e]" name="setup" is-config="true" duration-ms="310" started-at="2020-07-24T15:16:17 IST" finished-at="2020-07-24T15:16:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="verifyTitle" duration-ms="50" started-at="2020-07-21T07:36:49Z" description="verifies title of index page" finished-at="2020-07-21T07:36:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="verifyLogo()[pri:1, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="verifyLogo" duration-ms="336" started-at="2020-07-21T07:36:49Z" description="verify logo" finished-at="2020-07-21T07:36:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method status="PASS" signature="checkProductsDropdown()[pri:2, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="checkProductsDropdown" duration-ms="542" started-at="2020-07-21T07:36:50Z" description="Check products dropdown" finished-at="2020-07-21T07:36:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkProductsDropdown -->
-        <test-method status="PASS" signature="verifyPricingLink()[pri:3, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="verifyPricingLink" duration-ms="3599" started-at="2020-07-21T07:36:50Z" description="verify pricing link" finished-at="2020-07-21T07:36:54Z">
+        <test-method status="PASS" signature="verifyPricingLink()[pri:10, instance:com.vtiger.qa.testcases.IndexPageTestCases@1f13d6e]" name="verifyPricingLink" duration-ms="7699" started-at="2020-07-24T15:16:17 IST" description="verify pricing link" finished-at="2020-07-24T15:16:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPricingLink -->
-        <test-method status="PASS" signature="checkResourcesDropdown()[pri:4, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="checkResourcesDropdown" duration-ms="1009" started-at="2020-07-21T07:36:54Z" description="Check products dropdown" finished-at="2020-07-21T07:36:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@1f13d6e]" name="tearDown" is-config="true" duration-ms="1480" started-at="2020-07-24T15:16:25 IST" finished-at="2020-07-24T15:16:27 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkResourcesDropdown -->
-        <test-method status="FAIL" signature="verifyCovidLink()[pri:5, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="verifyCovidLink" duration-ms="7137" started-at="2020-07-21T07:36:55Z" description="verify covid link" finished-at="2020-07-21T07:37:02Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Login - Vtiger] but found [Covid-19: Vtiger's Business Assistance Package | Vtiger CRM]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Login - Vtiger] but found [Covid-19: Vtiger's Business Assistance Package | Vtiger CRM]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.vtiger.qa.testcases.IndexPageTestCases.verifyCovidLink(IndexPageTestCases.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCovidLink -->
-        <test-method status="PASS" signature="verifyLoginLink()[pri:6, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="verifyLoginLink" duration-ms="8660" started-at="2020-07-21T07:37:02Z" description="verifies login link" finished-at="2020-07-21T07:37:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginLink -->
-        <test-method status="PASS" signature="verifySignUpLink()[pri:7, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="verifySignUpLink" duration-ms="10465" started-at="2020-07-21T07:37:11Z" description="verifies Sign up link" finished-at="2020-07-21T07:37:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignUpLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vtiger.qa.testcases.IndexPageTestCases@4f787b]" name="tearDown" is-config="true" duration-ms="3787" started-at="2020-07-21T07:37:21Z" finished-at="2020-07-21T07:37:25Z">
-
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoTest -->
-        <test-method status="PASS" signature="googleLinkTest()[pri:3, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="googleLinkTest" duration-ms="34" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleLinkTest -->
-        <test-method status="PASS" signature="microsoftLinkTest()[pri:4, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="microsoftLinkTest" duration-ms="75" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- microsoftLinkTest -->
-        <test-method status="PASS" signature="linkedInLinkTest()[pri:5, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="linkedInLinkTest" duration-ms="27" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkedInLinkTest -->
-        <test-method status="PASS" signature="loginTest()[pri:6, instance:com.vtiger.qa.testcases.LoginPageTest@6f7fd0e6]" name="loginTest" duration-ms="183" started-at="2020-07-21T08:24:37Z" finished-at="2020-07-21T08:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- com.vtiger.qa.testcases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vtiger.qa.testcases.IndexPageTestCases -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Vtiger] -->
 </testng-results>

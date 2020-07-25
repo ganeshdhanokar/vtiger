@@ -14,6 +14,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
@@ -46,7 +50,8 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
-	@BeforeTest
+
+	@BeforeMethod
 	@Parameters("browser")
 	public static void openBrowser(@Optional("CHROME") String browserName) {
 	
@@ -70,10 +75,15 @@ public class TestBase {
 					.println("Invalid Browser name " + browserName + ". Expected Expected CHROME, IE, FIREFOX, OPERA");
 			break;
 		}
-		driver.get(property.getProperty("loginPageURL"));
+		driver.get(property.getProperty("baseURL"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(property.getProperty("pageLoadTimeout")), TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Long.parseLong(property.getProperty("implicitTimeout")), TimeUnit.SECONDS);
 		
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	}
 }
