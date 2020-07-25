@@ -15,9 +15,7 @@ import com.vtiger.qa.base.TestBase;
 
 public class SignUpPage extends TestBase {
 
-	@FindBy(xpath = "//a[contains(text(),'Sign up')]")
-	@CacheLookup
-	WebElement clickSignUpButton;
+
 
 	@FindBy(xpath = "//input[@type='email']")
 	@CacheLookup
@@ -44,10 +42,7 @@ public class SignUpPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void clickSignUpLink() 
-	{
-		clickSignUpButton.click();
-	}
+
 
 	public void enterMail() 
 	{

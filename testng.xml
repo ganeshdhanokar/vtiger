@@ -4,9 +4,9 @@
   <test name="Test">
   
   <classes>
- <class name="com.vtiger.qa.testcases.IndexPageTestCases"/> 
-  <class name="com.vtiger.qa.testcases.LoginPageTest"/> 
-<!--  <class name="com.vtiger.qa.testcases.SignUpPageTestCase"/> -->
+<!-- <class name="com.vtiger.qa.testcases.IndexPageTestCases"/> -->
+<!--  <class name="com.vtiger.qa.testcases.LoginPageTest"/> -->
+<class name="com.vtiger.qa.testcases.SignUpPageTestCase"/> 
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
