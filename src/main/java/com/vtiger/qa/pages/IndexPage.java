@@ -38,8 +38,7 @@ public class IndexPage extends TestBase {
 	WebElement vtigerLogo;
 
 
-	@FindBy(xpath = "(//label[@class='custom-control-label'])[1]")
-	WebElement toggleBtn;
+
 
 
 	public IndexPage() {
@@ -90,10 +89,6 @@ public class IndexPage extends TestBase {
 		return new CovidPage();
 	}
 
-
-	public void clickOnToggleButton() {
-		toggleBtn.click();
-	}
 
 
 }

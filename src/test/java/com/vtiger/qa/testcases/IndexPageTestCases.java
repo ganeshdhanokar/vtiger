@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.vtiger.qa.base.TestBase;
 import com.vtiger.qa.pages.IndexPage;
+import com.vtiger.qa.utility.VerifyPageImages;
+import com.vtiger.qa.utility.VerifyPageLinks;
 
 public class IndexPageTestCases extends TestBase {
 
@@ -23,57 +25,61 @@ public class IndexPageTestCases extends TestBase {
 		indexPage = new IndexPage();
 	}
 
-	@Test(priority = 7, description = "verifies title of index page")
+	@Test(priority = 0, description = "verifies title of index page")
 	public void verifyTitle() {
 		Assert.assertEquals(driver.getTitle(), "CRM Software | Customer Relationship Management System - Vtiger CRM");
 	}
 
-	@Test(priority = 8, description = "verify logo")
+	@Test(priority = 1, description = "verify logo")
 	public void verifyLogo() {
 		Assert.assertEquals(indexPage.verifyVtigerLogo(), true);
 
 	}
 
-	@Test(priority = 9, description = "Check products dropdown")
+	@Test(priority = 2, description = "Check products dropdown")
 	public void checkProductsDropdown() {
 		indexPage.hoverOnProductsDropdown();
 		Assert.assertEquals(indexPage.linksCountInProductsDropdown(), 4);
 	}
 
-	@Test(priority = 10, description = "verify pricing link")
+	@Test(priority = 3, description = "verify pricing link")
 	public void verifyPricingLink() {
 		indexPage.clickOnPricingLink();
 		Assert.assertEquals(driver.getTitle(), "Pricing, Editions and Features - Vtiger CRM");
 	}
 
-	@Test(priority = 11, description = "Check products dropdown")
+	@Test(priority = 4, description = "Check products dropdown")
 	public void checkResourcesDropdown() {
 		indexPage.hoverOnResourcesDropdown();
 		Assert.assertEquals(indexPage.linksCountInResourcesDropdown(), 8);
 	}
 
-	@Test(priority = 12, description = "verify covid link")
+	@Test(priority = 5, description = "verify covid link")
 	public void verifyCovidLink() {
 		indexPage.clickCovidDiscountLink();
 		Assert.assertEquals(driver.getTitle(), "Covid-19: Vtiger's Business Assistance Package | Vtiger CRM");
 	}
 
-	@Test(priority = 13, description = "verifies login link")
+	@Test(priority = 6, description = "verifies login link")
 	public void verifyLoginLink() {
 		indexPage.clickLoginLink();
 		Assert.assertEquals(driver.getTitle(), "Login - Vtiger");
 	}
 
-	@Test(priority = 14, description = "verifies Sign up link")
+	@Test(priority = 7, description = "verifies Sign up link")
 	private void verifySignUpLink() {
 		indexPage.clickSignupLink();
 		Assert.assertEquals(driver.getTitle(), "Start Your Free Trial - Vtiger");
 	}
 
-	public void verifyClickOnToogleBtn() {
-		indexPage.clickOnToggleButton();
+	@Test(priority = 8, description = "verifies all links on Index Page")
+	public void verifyIndexPageLinks() {
+		Assert.assertTrue(VerifyPageLinks.verifyLinks());
 	}
 
-	
+	@Test(priority = 9, description = "verifies all images on Index Page")
+	public void verifyIndexPageImages() {
+		Assert.assertTrue(VerifyPageImages.verifyImages());
+	}
 
 }

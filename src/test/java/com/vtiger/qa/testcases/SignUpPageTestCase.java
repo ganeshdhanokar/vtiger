@@ -13,7 +13,7 @@ public class SignUpPageTestCase extends TestBase
 	SignUpPage signuppage;
 	
 	@BeforeMethod
-	public void clickSignUpButton() 
+	public void setup() 
 	{
 		signuppage= new SignUpPage();
 		indexPage = new IndexPage();
@@ -44,9 +44,11 @@ public class SignUpPageTestCase extends TestBase
 		logger.info("You have reached the limit on signup attempts, please contact support@vtiger.com for further assistance. ");
 	}*/
 	
-	@Test(priority =3 )
+	@Test(priority =3)
 	public void sendVerificationMail()
 	{
+		signuppage.enterMail();
+		signuppage.clickNextButton();
 		signuppage.sendVerificationMail();
 		logger.info("Mail not send");
 	}
