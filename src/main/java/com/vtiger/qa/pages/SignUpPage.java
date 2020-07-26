@@ -25,7 +25,7 @@ public class SignUpPage extends TestBase {
 	@CacheLookup
 	WebElement clickNextButton;
 
-	@FindBy(xpath = "//div[@class='text-danger mb-4']")
+	@FindBy(xpath = "//p[contains(text(),'sent you an email')]")
 	WebElement heading;
 
 	@FindBy(xpath = "//a[contains(text(),'Privacy Policy')]")
@@ -47,7 +47,7 @@ public class SignUpPage extends TestBase {
 	public void enterMail() 
 	{
 		// textEnterEmail.click();
-		textEnterEmail.sendKeys("suresh@getnada.com");
+		textEnterEmail.sendKeys("sabcd@getnada.com");
 	}
 
 	public void clickNextButton() 
