@@ -4,7 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.vtiger.qa.base.TestBase;
@@ -17,15 +20,17 @@ public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 	
-	public LoginPageTest() {
+	/*public LoginPageTest() {
 		super();
-	}
+	}*/
 	
-	@BeforeClass
-	public void setUp() {
+	@BeforeMethod
+
+	public void setup() {
 		
-		openBrowser(property.getProperty("browser"));
-		loginPage = new LoginPage();	
+		loginPage = new LoginPage();
+		indexPage = new IndexPage();
+		indexPage.clickLoginLink();
 	}
 	
 	@Test(priority=1)
@@ -65,10 +70,10 @@ public class LoginPageTest extends TestBase {
 		loginPage.loginVtiger(property.getProperty("username"), property.getProperty("password"));
 	}
 	
-	@AfterClass
+	/*@AfterClass
 	public void tearDown() {
 		driver.quit();
 		
 	}
-
+*/
 }

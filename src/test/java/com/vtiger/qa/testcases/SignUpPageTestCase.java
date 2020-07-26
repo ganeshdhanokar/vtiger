@@ -1,19 +1,23 @@
 package com.vtiger.qa.testcases;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.vtiger.qa.base.TestBase;
+import com.vtiger.qa.pages.IndexPage;
 import com.vtiger.qa.pages.SignUpPage;
 
 public class SignUpPageTestCase extends TestBase 
 {
+	IndexPage indexPage;
 	SignUpPage signuppage;
 	
-	@Test(priority = 0)
+	@BeforeMethod
 	public void clickSignUpButton() 
 	{
 		signuppage= new SignUpPage();
-		signuppage.clickSignUpLink();
+		indexPage = new IndexPage();
+		indexPage.clickSignupLink();
 		logger.info("Click on Sign Up Button");
 		
 	}
