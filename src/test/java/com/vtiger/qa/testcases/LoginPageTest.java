@@ -7,12 +7,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.vtiger.qa.base.TestBase;
 import com.vtiger.qa.pages.HomePage;
 import com.vtiger.qa.pages.IndexPage;
 import com.vtiger.qa.pages.LoginPage;
+import com.vtiger.qa.utility.VerifyPageImages;
 
 public class LoginPageTest extends TestBase {
 	IndexPage indexPage;
@@ -20,12 +23,18 @@ public class LoginPageTest extends TestBase {
 	HomePage homePage;
 
 	
-	@BeforeClass
-	public void setUp() {
-		initialization(property.getProperty("browser"));
+	/*public LoginPageTest() {
+		super();
+	}*/
+	
+	@BeforeMethod
+
+	public void setup() {
+		
+		loginPage = new LoginPage();
 		indexPage = new IndexPage();
-		loginPage = indexPage.clickLoginLink();
-				
+		indexPage.clickLoginLink();
+
 	}
 	
 	@Test(priority=8)
@@ -65,10 +74,8 @@ public class LoginPageTest extends TestBase {
 		homePage = loginPage.loginVtiger(property.getProperty("username"), property.getProperty("password"));
 	}
 	
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-		
+	@Test(priority = 7, description = "verifies all images on login Page")
+	public void verifyLoginPageImages() {
+		Assert.assertTrue(VerifyPageImages.verifyImages());
 	}
-
 }

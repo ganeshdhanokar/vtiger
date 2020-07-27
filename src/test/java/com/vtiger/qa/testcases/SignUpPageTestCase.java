@@ -1,19 +1,23 @@
 package com.vtiger.qa.testcases;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.vtiger.qa.base.TestBase;
+import com.vtiger.qa.pages.IndexPage;
 import com.vtiger.qa.pages.SignUpPage;
 
 public class SignUpPageTestCase extends TestBase 
 {
+	IndexPage indexPage;
 	SignUpPage signuppage;
 	
-	@Test(priority = 0)
-	public void clickSignUpButton() 
+	@BeforeMethod
+	public void setup() 
 	{
 		signuppage= new SignUpPage();
-		signuppage.clickSignUpLink();
+		indexPage = new IndexPage();
+		indexPage.clickSignupLink();
 		logger.info("Click on Sign Up Button");
 		
 	}
@@ -40,9 +44,11 @@ public class SignUpPageTestCase extends TestBase
 		logger.info("You have reached the limit on signup attempts, please contact support@vtiger.com for further assistance. ");
 	}*/
 	
-	@Test(priority =3 )
+	@Test(priority =3)
 	public void sendVerificationMail()
 	{
+		signuppage.enterMail();
+		signuppage.clickNextButton();
 		signuppage.sendVerificationMail();
 		logger.info("Mail not send");
 	}
