@@ -37,10 +37,6 @@ public class IndexPage extends TestBase {
 	@FindBy(xpath = "//img[@class='navbar-brand-img']")
 	WebElement vtigerLogo;
 
-
-
-
-
 	public IndexPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -72,7 +68,6 @@ public class IndexPage extends TestBase {
 	public PricingPage clickOnPricingLink() {
 		pricingLink.click();
 		return new PricingPage();
-
 	}
 
 	public void hoverOnResourcesDropdown() {

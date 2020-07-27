@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vTiger Application Test Automation Test Suite">
+
+	<test name="vTiger App Test Cases">
+		<classes>
+			<class name="com.vtiger.qa.testcases.IndexPageTestCases"></class>
+			<class name="com.vtiger.qa.testcases.LoginPageTest"></class>
+		</classes>
+	</test>
+</suite>
