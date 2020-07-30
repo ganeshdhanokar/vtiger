@@ -36,6 +36,9 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//a[2]//img[1]")
 	WebElement linkedInLink;
 	
+	@FindBy(xpath="//p[text()='Invalid credentials']")
+	WebElement invalidMessage;
+	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -67,6 +70,30 @@ public class LoginPage extends TestBase{
 		return new HomePage();
 		
 	}
+	
+	public void enterUsername(String uid) {
+		username.sendKeys(uid);
+	}
+	
+	public void enterPassword(String pass) {
+		password.sendKeys(pass);
 
+	}
+	
+	public String verifyInvalidCredentialMessage() {
+		return invalidMessage.getText();
+	}
+
+	public String userNameRequiredMessage() {
+		return username.getAttribute("validationMessage");
+	}
+	
+	public String passwordRequiredMessage() {
+		return password.getAttribute("validationMessage");
+	}
+	
+	public void clickOnSignInButton() {
+		signInBtn.click();
+	}
 
 }

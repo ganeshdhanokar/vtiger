@@ -22,7 +22,7 @@ public class IndexPageTestCases extends TestBase {
 	@BeforeMethod
 	
 	public void setup() {
-		initialization(property.getProperty("browser"));
+		//initialization(property.getProperty("browser"));
 		indexPage = new IndexPage();
 	}
 
