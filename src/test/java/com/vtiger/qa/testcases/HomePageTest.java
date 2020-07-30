@@ -26,10 +26,13 @@ public class HomePageTest extends TestBase{
 	
 	@BeforeMethod
 	public void setUp() {
-		initialization(property.getProperty("browser"));
+		//initialization(property.getProperty("browser"));
 		indexPage = new IndexPage();
 		loginPage = indexPage.clickLoginLink();	
 		homePage = loginPage.loginVtiger(property.getProperty("username"), property.getProperty("password"));
+		//driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//Assert.assertEquals(driver.getTitle(), "Ondemand");
 	}
 	
 	@Test(priority=1)

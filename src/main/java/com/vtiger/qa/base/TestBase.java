@@ -77,11 +77,11 @@ public class TestBase {
 					.println("Invalid Browser name " + browserName + ". Expected Expected CHROME, IE, FIREFOX, OPERA");
 			break;
 		}
-		driver.get(property.getProperty("baseURL"));
-		driver.manage().window().maximize();
-		//driver.manage().timeouts().pageLoadTimeout(Long.parseLong(property.getProperty("pageLoadTimeout")), TimeUnit.SECONDS);
-		//driver.manage().timeouts().implicitlyWait(Long.parseLong(property.getProperty("implicitTimeout")), TimeUnit.SECONDS);
 		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(property.getProperty("pageLoadTimeout")), TimeUnit.SECONDS);
+		driver.get(property.getProperty("baseURL"));	
+		driver.manage().timeouts().implicitlyWait(Long.parseLong(property.getProperty("implicitTimeout")), TimeUnit.SECONDS);
 	}
 	
 	@AfterMethod
