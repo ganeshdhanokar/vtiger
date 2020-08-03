@@ -84,8 +84,8 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Long.parseLong(property.getProperty("implicitTimeout")), TimeUnit.SECONDS);
 	}
 	
-	@AfterMethod
+	/*@AfterMethod
 	public void tearDown() {
 		driver.quit();
-	}
+	}*/
 }

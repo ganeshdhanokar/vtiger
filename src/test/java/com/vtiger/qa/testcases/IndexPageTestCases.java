@@ -28,7 +28,7 @@ public class IndexPageTestCases extends TestBase {
 
 	@Test(priority = 0, description = "verifies title of index page")
 	public void verifyTitle() {
-		Assert.assertEquals(driver.getTitle(), "CRM Software | Customer Relationship Management System - Vtiger CRM");
+		Assert.assertEquals(driver.getTitle(), property.getProperty("indexPageTitle"));
 	}
 
 	@Test(priority = 1, description = "verify logo")
@@ -46,7 +46,7 @@ public class IndexPageTestCases extends TestBase {
 	@Test(priority = 3, description = "verify pricing link")
 	public void verifyPricingLink() {
 		indexPage.clickOnPricingLink();
-		Assert.assertEquals(driver.getTitle(), "Pricing, Editions and Features - Vtiger CRM");
+		Assert.assertEquals(driver.getTitle(), property.getProperty("pricingTitle"));
 	}
 
 	@Test(priority = 4, description = "Check products dropdown")
@@ -58,19 +58,19 @@ public class IndexPageTestCases extends TestBase {
 	@Test(priority = 5, description = "verify covid link")
 	public void verifyCovidLink() {
 		indexPage.clickCovidDiscountLink();
-		Assert.assertEquals(driver.getTitle(), "Covid-19: Vtiger's Business Assistance Package | Vtiger CRM");
+		Assert.assertEquals(driver.getTitle(), property.getProperty("covidPageTitle"));
 	}
 
 	@Test(priority = 6, description = "verifies login link")
 	public void verifyLoginLink() {
 		indexPage.clickLoginLink();
-		Assert.assertEquals(driver.getTitle(), "Login - Vtiger");
+		Assert.assertEquals(driver.getTitle(), property.getProperty("loginPageTitle"));
 	}
 
 	@Test(priority = 7, description = "verifies Sign up link")
 	private void verifySignUpLink() {
 		indexPage.clickSignupLink();
-		Assert.assertEquals(driver.getTitle(), "Start Your Free Trial - Vtiger");
+		Assert.assertEquals(driver.getTitle(), property.getProperty("signupPageTitle"));
 	}
 
 	@Test(priority = 8, description = "verifies all links on Index Page")
