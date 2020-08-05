@@ -15,7 +15,7 @@ public class DashboardPageTestCases extends TestBase {
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 
-	@BeforeMethod
+	@BeforeMethod(groups= {"smoke"})
 	public void setup() {
 		indexPage = new IndexPage();
 		loginPage = new LoginPage();
@@ -33,7 +33,7 @@ public class DashboardPageTestCases extends TestBase {
 		Assert.assertEquals(driver.getTitle(), property.getProperty("dashboardPageTitle"));
 	}
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void verifyLogout() {
 		dashboardPage.clickOnUserButton();
 		dashboardPage.clickOnLogout();

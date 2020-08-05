@@ -12,7 +12,7 @@ public class SignUpPageTestCase extends TestBase
 	IndexPage indexPage;
 	SignUpPage signuppage;
 	
-	@BeforeMethod
+	@BeforeMethod(groups= {"smoke"})
 	public void setup() 
 	{
 		signuppage= new SignUpPage();

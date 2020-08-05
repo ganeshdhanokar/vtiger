@@ -19,11 +19,9 @@ public class IndexPageTestCases extends TestBase {
 
 	public static IndexPage indexPage;
 	
-	@BeforeMethod
-	
-	public void setup() {
-		//initialization(property.getProperty("browser"));
-		indexPage = new IndexPage();
+	@BeforeMethod()
+	public void setup(){
+				indexPage = new IndexPage();
 	}
 
 	@Test(priority = 0, description = "verifies title of index page")
@@ -82,5 +80,7 @@ public class IndexPageTestCases extends TestBase {
 	public void verifyIndexPageImages() {
 		Assert.assertTrue(VerifyPageImages.verifyImages());
 	}
+	
+
 
 }
