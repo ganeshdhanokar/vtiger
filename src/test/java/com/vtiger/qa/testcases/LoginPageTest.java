@@ -34,7 +34,7 @@ public class LoginPageTest extends TestBase {
 		super();
 	}*/
 	
-	@BeforeMethod
+	@BeforeMethod(groups= {"smoke"})
 
 	public void setup() {
 		

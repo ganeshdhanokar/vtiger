@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VtigerSmokeSuite" verbose="10">
+	<groups>
+		<run>
+			<include name="smoke" />
+		</run>
+	</groups>
+	<test name="SmokeTestHTMLUnit">
+		<parameter name="browser" value="HTMLUnit" />
+
+<!--
+		<classes>
+			<class name="com.vtiger.qa.testcases.IndexPageTestCases" />
+			<class name="com.vtiger.qa.testcases.LoginPageTest" />
+			<class name="com.vtiger.qa.testcases.SignUpPageTestCase" />
+			<class name="com.vtiger.qa.testcases.HomePageTest" />
+			<class name="com.vtiger.qa.testcases.DashboardPageTestCases" />
+		</classes> -->
+	</test> <!-- Test -->
+
+	<test name="SmokeTestCHROME">
+		<parameter name="browser" value="CHROME" />
+		
+
+		<classes>
+			<class name="com.vtiger.qa.testcases.IndexPageTestCases" />
+			<class name="com.vtiger.qa.testcases.LoginPageTest" />
+			<class name="com.vtiger.qa.testcases.SignUpPageTestCase" />
+			<class name="com.vtiger.qa.testcases.HomePageTest" />
+			<class name="com.vtiger.qa.testcases.DashboardPageTestCases" />
+		</classes>
+	</test>
+	
+<!--
+	<test name="SmokeTestIE">
+		<parameter name="browser" value="IE" />
+	
+		<classes>
+			<class name="com.vtiger.qa.testcases.IndexPageTestCases" />
+			<class name="com.vtiger.qa.testcases.LoginPageTest" />
+			<class name="com.vtiger.qa.testcases.SignUpPageTestCase" />
+			<class name="com.vtiger.qa.testcases.HomePageTest" />
+			<class name="com.vtiger.qa.testcases.DashboardPageTestCases" />
+		</classes>
+	</test>
+-->
+</suite> <!-- Suite -->
